@@ -242,7 +242,6 @@ async def main(page: ft.Page):
         ]
     }
 
-    # استرجاع كافة البيانات المحفوظة محلياً
     try:
         saved_bal = await page.client_storage.get_async("paper_balance")
         if saved_bal is not None:
